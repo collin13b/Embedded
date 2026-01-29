@@ -1,0 +1,31 @@
+{
+    "configurations": [
+        {
+            "name": "STM32F407",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "app",
+                "firmware/cmsis/core",
+                "firmware/cmsis/device/**",
+                "firmware/driver/inc/**",
+                "firmware/driver/src",
+                "C:/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include",
+                "${workspaceFolder}/driver"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE",
+                "STM32F40_41xxx",
+                "USE_STDPERIPH_DRIVER",
+                "HSE_VALUE=8000000",
+                "__CC_ARM"
+            ],
+            "compilerPath": "C:/gcc-arm-none-eabi-10.3-2021.10/bin/arm-none-eabi-gcc.exe",
+            "cStandard": "c99",
+            "cppStandard": "c++11",
+            "intelliSenseMode": "windows-gcc-arm"
+        }
+    ],
+    "version": 4
+}
