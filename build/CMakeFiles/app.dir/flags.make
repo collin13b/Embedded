@@ -4,7 +4,7 @@
 # compile CXX with g++-14
 CXX_DEFINES = 
 
-CXX_INCLUDES = 
+CXX_INCLUDES = -I/home/cat/linux_Ai/app/inc -isystem /usr/include/opencv4
 
 CXX_FLAGS = -std=gnu++23
 

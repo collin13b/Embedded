@@ -8,7 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/cat/linux_Ai/main.cpp" "CMakeFiles/main.dir/main.cpp.o" "gcc" "CMakeFiles/main.dir/main.cpp.o.d"
+  "/home/cat/linux_Ai/app/src/main.cpp" "CMakeFiles/app.dir/app/src/main.cpp.o" "gcc" "CMakeFiles/app.dir/app/src/main.cpp.o.d"
+  "/home/cat/linux_Ai/app/src/thread_pool.cpp" "CMakeFiles/app.dir/app/src/thread_pool.cpp.o" "gcc" "CMakeFiles/app.dir/app/src/thread_pool.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

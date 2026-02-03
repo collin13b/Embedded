@@ -117,41 +117,65 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named main
+# Target rules for targets named app
 
 # Build rule for target.
-main: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 main
-.PHONY : main
+app: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 app
+.PHONY : app
 
 # fast build rule for target.
-main/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
-.PHONY : main/fast
+app/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/build
+.PHONY : app/fast
 
-main.o: main.cpp.o
-.PHONY : main.o
+app/src/main.o: app/src/main.cpp.o
+.PHONY : app/src/main.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.o
-.PHONY : main.cpp.o
+app/src/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/app/src/main.cpp.o
+.PHONY : app/src/main.cpp.o
 
-main.i: main.cpp.i
-.PHONY : main.i
+app/src/main.i: app/src/main.cpp.i
+.PHONY : app/src/main.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.i
-.PHONY : main.cpp.i
+app/src/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/app/src/main.cpp.i
+.PHONY : app/src/main.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+app/src/main.s: app/src/main.cpp.s
+.PHONY : app/src/main.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.s
-.PHONY : main.cpp.s
+app/src/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/app/src/main.cpp.s
+.PHONY : app/src/main.cpp.s
+
+app/src/thread_pool.o: app/src/thread_pool.cpp.o
+.PHONY : app/src/thread_pool.o
+
+# target to build an object file
+app/src/thread_pool.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/app/src/thread_pool.cpp.o
+.PHONY : app/src/thread_pool.cpp.o
+
+app/src/thread_pool.i: app/src/thread_pool.cpp.i
+.PHONY : app/src/thread_pool.i
+
+# target to preprocess a source file
+app/src/thread_pool.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/app/src/thread_pool.cpp.i
+.PHONY : app/src/thread_pool.cpp.i
+
+app/src/thread_pool.s: app/src/thread_pool.cpp.s
+.PHONY : app/src/thread_pool.s
+
+# target to generate assembly for a file
+app/src/thread_pool.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/app/src/thread_pool.cpp.s
+.PHONY : app/src/thread_pool.cpp.s
 
 # Help Target
 help:
@@ -161,10 +185,13 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... main"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... app"
+	@echo "... app/src/main.o"
+	@echo "... app/src/main.i"
+	@echo "... app/src/main.s"
+	@echo "... app/src/thread_pool.o"
+	@echo "... app/src/thread_pool.i"
+	@echo "... app/src/thread_pool.s"
 .PHONY : help
 
 

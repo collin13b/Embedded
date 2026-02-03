@@ -3,7 +3,11 @@
         {
             "name": "Linux",
             "includePath": [
-                "${workspaceFolder}/**"
+                "${workspaceFolder}/**",
+                "/usr/include/opencv4",
+                "${workspaceFolder}/app/inc",
+                "${workspaceFolder}/app/src"
+
             ],
             "defines": [],
             "compilerPath": "/usr/bin/g++-14",
