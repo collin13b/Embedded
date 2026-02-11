@@ -1,0 +1,33 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "(gdb) 启动调试",
+            "type": "cppdbg",
+            "request": "launch",
+            // 这里改成你生成的可执行文件的完整路径！
+            // 根据你的 CMake，应该是 build 目录下的 app
+            "program": "${workspaceFolder}/build/app", 
+            "args": [], // 如果你的程序需要参数（比如模型路径），写在这里
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}", // 工作目录，这很重要！决定了你加载图片/模型的相对路径
+            "environment": [],
+            "externalConsole": false, // false 表示用 VSCode 内部终端，true 会弹出一个黑框
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "为 gdb 启用整齐打印",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "设置反汇编风格为 Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ],
+            // 以后如果你要在 RK3588 上调试，这里要改
+            // "miDebuggerPath": "/usr/bin/gdb" 
+        }
+    ]
+}

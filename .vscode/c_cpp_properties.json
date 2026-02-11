@@ -6,8 +6,10 @@
                 "${workspaceFolder}/**",
                 "/usr/include/opencv4",
                 "${workspaceFolder}/app/inc",
-                "${workspaceFolder}/app/src"
-
+                "${workspaceFolder}/app/src",
+                "${workspaceFolder}/3rdparty/include",
+                "/usr/include/rga",
+                "${workspaceFolder}/3rdparty/librknn_api/include"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/g++-14",
