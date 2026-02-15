@@ -29,8 +29,9 @@ include_directories(
 set(C_DIR ${CMAKE_SOURCE_DIR}/app/src)
 add_executable(app 
         ${C_DIR}/main.cpp
-        #${C_DIR}/thread_pool.cpp
+        ${C_DIR}/thread_pool.cpp
         ${C_DIR}/yolov5s.cpp
+        ${C_DIR}/bind_thread.cpp
         )
 # 将 OpenCV 的库与目标可执行文件 app 链接，确保在程序运行时能够调用 OpenCV 函数。
 target_link_libraries(app

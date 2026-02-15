@@ -7,7 +7,7 @@
                 "/usr/include/opencv4",
                 "${workspaceFolder}/app/inc",
                 "${workspaceFolder}/app/src",
-                "${workspaceFolder}/3rdparty/include",
+                "${workspaceFolder}/3rdparty",
                 "/usr/include/rga",
                 "${workspaceFolder}/3rdparty/librknn_api/include"
             ],

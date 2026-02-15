@@ -14,6 +14,8 @@
 #include <queue>
 #include "Safequeue.h"
 #include <stop_token>
+#include <pthread.h>
+#include <sched.h>
 using namespace std;
 
 struct ProcessData
@@ -37,7 +39,7 @@ private:
     mutex task_mutex;
     condition_variable_any task_cond;
     queue<packaged_task<ProcessData()>> tasks;
-    vector<yolov5s> yolo_groups;
+    vector<std::unique_ptr<yolov5s>> yolo_groups;
 };    
 
 #endif // __THREAD_POOL_H

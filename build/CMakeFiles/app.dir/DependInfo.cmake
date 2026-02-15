@@ -8,7 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/cat/linux_Ai/app/src/bind_thread.cpp" "CMakeFiles/app.dir/app/src/bind_thread.cpp.o" "gcc" "CMakeFiles/app.dir/app/src/bind_thread.cpp.o.d"
   "/home/cat/linux_Ai/app/src/main.cpp" "CMakeFiles/app.dir/app/src/main.cpp.o" "gcc" "CMakeFiles/app.dir/app/src/main.cpp.o.d"
+  "/home/cat/linux_Ai/app/src/thread_pool.cpp" "CMakeFiles/app.dir/app/src/thread_pool.cpp.o" "gcc" "CMakeFiles/app.dir/app/src/thread_pool.cpp.o.d"
   "/home/cat/linux_Ai/app/src/yolov5s.cpp" "CMakeFiles/app.dir/app/src/yolov5s.cpp.o" "gcc" "CMakeFiles/app.dir/app/src/yolov5s.cpp.o.d"
   )
 

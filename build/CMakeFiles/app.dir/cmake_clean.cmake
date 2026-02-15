@@ -1,6 +1,10 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/app.dir/app/src/bind_thread.cpp.o"
+  "CMakeFiles/app.dir/app/src/bind_thread.cpp.o.d"
   "CMakeFiles/app.dir/app/src/main.cpp.o"
   "CMakeFiles/app.dir/app/src/main.cpp.o.d"
+  "CMakeFiles/app.dir/app/src/thread_pool.cpp.o"
+  "CMakeFiles/app.dir/app/src/thread_pool.cpp.o.d"
   "CMakeFiles/app.dir/app/src/yolov5s.cpp.o"
   "CMakeFiles/app.dir/app/src/yolov5s.cpp.o.d"
   "app"

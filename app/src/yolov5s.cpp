@@ -170,7 +170,9 @@ int yolov5s::inference_img(Mat &img)
         auto end_time = std::chrono::high_resolution_clock::now();
         auto duration_time = std::chrono::duration_cast<std::chrono::milliseconds>(end_time - start_time);  
         // cout<<"preprocess time "<<duration_time.count()<<" ms"<<endl;
-
+        vector<rknn_output> outputs(io_num.n_output);
+        ret = rknn_outputs_get(ctx,io_num.n_output,outputs.data(),nullptr);
+        if(ret != 0) throw runtime_error("rknn_outputs_get failed");
     }
         catch(const std::exception& e)
         {

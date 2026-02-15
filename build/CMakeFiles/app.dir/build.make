@@ -83,10 +83,24 @@ CMakeFiles/app.dir/app/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/app.dir/app/src/main.cpp.s"
 	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cat/linux_Ai/app/src/main.cpp -o CMakeFiles/app.dir/app/src/main.cpp.s
 
+CMakeFiles/app.dir/app/src/thread_pool.cpp.o: CMakeFiles/app.dir/flags.make
+CMakeFiles/app.dir/app/src/thread_pool.cpp.o: /home/cat/linux_Ai/app/src/thread_pool.cpp
+CMakeFiles/app.dir/app/src/thread_pool.cpp.o: CMakeFiles/app.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/cat/linux_Ai/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/app.dir/app/src/thread_pool.cpp.o"
+	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/app.dir/app/src/thread_pool.cpp.o -MF CMakeFiles/app.dir/app/src/thread_pool.cpp.o.d -o CMakeFiles/app.dir/app/src/thread_pool.cpp.o -c /home/cat/linux_Ai/app/src/thread_pool.cpp
+
+CMakeFiles/app.dir/app/src/thread_pool.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/app.dir/app/src/thread_pool.cpp.i"
+	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cat/linux_Ai/app/src/thread_pool.cpp > CMakeFiles/app.dir/app/src/thread_pool.cpp.i
+
+CMakeFiles/app.dir/app/src/thread_pool.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/app.dir/app/src/thread_pool.cpp.s"
+	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cat/linux_Ai/app/src/thread_pool.cpp -o CMakeFiles/app.dir/app/src/thread_pool.cpp.s
+
 CMakeFiles/app.dir/app/src/yolov5s.cpp.o: CMakeFiles/app.dir/flags.make
 CMakeFiles/app.dir/app/src/yolov5s.cpp.o: /home/cat/linux_Ai/app/src/yolov5s.cpp
 CMakeFiles/app.dir/app/src/yolov5s.cpp.o: CMakeFiles/app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/cat/linux_Ai/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/app.dir/app/src/yolov5s.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/cat/linux_Ai/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/app.dir/app/src/yolov5s.cpp.o"
 	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/app.dir/app/src/yolov5s.cpp.o -MF CMakeFiles/app.dir/app/src/yolov5s.cpp.o.d -o CMakeFiles/app.dir/app/src/yolov5s.cpp.o -c /home/cat/linux_Ai/app/src/yolov5s.cpp
 
 CMakeFiles/app.dir/app/src/yolov5s.cpp.i: cmake_force
@@ -97,16 +111,34 @@ CMakeFiles/app.dir/app/src/yolov5s.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/app.dir/app/src/yolov5s.cpp.s"
 	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cat/linux_Ai/app/src/yolov5s.cpp -o CMakeFiles/app.dir/app/src/yolov5s.cpp.s
 
+CMakeFiles/app.dir/app/src/bind_thread.cpp.o: CMakeFiles/app.dir/flags.make
+CMakeFiles/app.dir/app/src/bind_thread.cpp.o: /home/cat/linux_Ai/app/src/bind_thread.cpp
+CMakeFiles/app.dir/app/src/bind_thread.cpp.o: CMakeFiles/app.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/cat/linux_Ai/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/app.dir/app/src/bind_thread.cpp.o"
+	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/app.dir/app/src/bind_thread.cpp.o -MF CMakeFiles/app.dir/app/src/bind_thread.cpp.o.d -o CMakeFiles/app.dir/app/src/bind_thread.cpp.o -c /home/cat/linux_Ai/app/src/bind_thread.cpp
+
+CMakeFiles/app.dir/app/src/bind_thread.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/app.dir/app/src/bind_thread.cpp.i"
+	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cat/linux_Ai/app/src/bind_thread.cpp > CMakeFiles/app.dir/app/src/bind_thread.cpp.i
+
+CMakeFiles/app.dir/app/src/bind_thread.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/app.dir/app/src/bind_thread.cpp.s"
+	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cat/linux_Ai/app/src/bind_thread.cpp -o CMakeFiles/app.dir/app/src/bind_thread.cpp.s
+
 # Object files for target app
 app_OBJECTS = \
 "CMakeFiles/app.dir/app/src/main.cpp.o" \
-"CMakeFiles/app.dir/app/src/yolov5s.cpp.o"
+"CMakeFiles/app.dir/app/src/thread_pool.cpp.o" \
+"CMakeFiles/app.dir/app/src/yolov5s.cpp.o" \
+"CMakeFiles/app.dir/app/src/bind_thread.cpp.o"
 
 # External object files for target app
 app_EXTERNAL_OBJECTS =
 
 app: CMakeFiles/app.dir/app/src/main.cpp.o
+app: CMakeFiles/app.dir/app/src/thread_pool.cpp.o
 app: CMakeFiles/app.dir/app/src/yolov5s.cpp.o
+app: CMakeFiles/app.dir/app/src/bind_thread.cpp.o
 app: CMakeFiles/app.dir/build.make
 app: /usr/lib/aarch64-linux-gnu/libopencv_stitching.so.4.6.0
 app: /usr/lib/aarch64-linux-gnu/libopencv_alphamat.so.4.6.0
@@ -166,7 +198,7 @@ app: /usr/lib/aarch64-linux-gnu/libopencv_photo.so.4.6.0
 app: /usr/lib/aarch64-linux-gnu/libopencv_imgproc.so.4.6.0
 app: /usr/lib/aarch64-linux-gnu/libopencv_core.so.4.6.0
 app: CMakeFiles/app.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/cat/linux_Ai/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable app"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/cat/linux_Ai/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable app"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/app.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

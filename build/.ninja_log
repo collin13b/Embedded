@@ -1,0 +1,5 @@
+# ninja log v5
+4	2017	1770897114331942413	CMakeFiles/app.dir/app/src/yolov5s.cpp.o	baf883667187d716
+2724	3399	1770897115708564245	app	11fc283a70fbdec5
+4	2704	1770897115018586718	CMakeFiles/app.dir/app/src/thread_pool.cpp.o	e3c803d39a697e10
+3	2724	1770897115005253819	CMakeFiles/app.dir/app/src/main.cpp.o	93c7a24ab985ce8a

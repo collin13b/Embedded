@@ -129,6 +129,30 @@ app/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/build
 .PHONY : app/fast
 
+app/src/bind_thread.o: app/src/bind_thread.cpp.o
+.PHONY : app/src/bind_thread.o
+
+# target to build an object file
+app/src/bind_thread.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/app/src/bind_thread.cpp.o
+.PHONY : app/src/bind_thread.cpp.o
+
+app/src/bind_thread.i: app/src/bind_thread.cpp.i
+.PHONY : app/src/bind_thread.i
+
+# target to preprocess a source file
+app/src/bind_thread.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/app/src/bind_thread.cpp.i
+.PHONY : app/src/bind_thread.cpp.i
+
+app/src/bind_thread.s: app/src/bind_thread.cpp.s
+.PHONY : app/src/bind_thread.s
+
+# target to generate assembly for a file
+app/src/bind_thread.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/app/src/bind_thread.cpp.s
+.PHONY : app/src/bind_thread.cpp.s
+
 app/src/main.o: app/src/main.cpp.o
 .PHONY : app/src/main.o
 
@@ -152,6 +176,30 @@ app/src/main.s: app/src/main.cpp.s
 app/src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/app/src/main.cpp.s
 .PHONY : app/src/main.cpp.s
+
+app/src/thread_pool.o: app/src/thread_pool.cpp.o
+.PHONY : app/src/thread_pool.o
+
+# target to build an object file
+app/src/thread_pool.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/app/src/thread_pool.cpp.o
+.PHONY : app/src/thread_pool.cpp.o
+
+app/src/thread_pool.i: app/src/thread_pool.cpp.i
+.PHONY : app/src/thread_pool.i
+
+# target to preprocess a source file
+app/src/thread_pool.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/app/src/thread_pool.cpp.i
+.PHONY : app/src/thread_pool.cpp.i
+
+app/src/thread_pool.s: app/src/thread_pool.cpp.s
+.PHONY : app/src/thread_pool.s
+
+# target to generate assembly for a file
+app/src/thread_pool.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/app/src/thread_pool.cpp.s
+.PHONY : app/src/thread_pool.cpp.s
 
 app/src/yolov5s.o: app/src/yolov5s.cpp.o
 .PHONY : app/src/yolov5s.o
@@ -186,9 +234,15 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... app"
+	@echo "... app/src/bind_thread.o"
+	@echo "... app/src/bind_thread.i"
+	@echo "... app/src/bind_thread.s"
 	@echo "... app/src/main.o"
 	@echo "... app/src/main.i"
 	@echo "... app/src/main.s"
+	@echo "... app/src/thread_pool.o"
+	@echo "... app/src/thread_pool.i"
+	@echo "... app/src/thread_pool.s"
 	@echo "... app/src/yolov5s.o"
 	@echo "... app/src/yolov5s.i"
 	@echo "... app/src/yolov5s.s"
