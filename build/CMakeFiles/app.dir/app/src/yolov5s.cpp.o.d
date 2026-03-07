@@ -246,8 +246,7 @@ CMakeFiles/app.dir/app/src/yolov5s.cpp.o: \
  /usr/include/c++/13/complex /usr/include/c++/13/sstream \
  /usr/include/c++/13/bits/sstream.tcc \
  /usr/include/opencv4/opencv2/core/utility.hpp \
- /usr/include/opencv4/opencv2/core.hpp /usr/include/c++/13/functional \
- /usr/include/c++/13/bits/std_function.h \
+ /usr/include/c++/13/functional /usr/include/c++/13/bits/std_function.h \
  /usr/include/c++/13/unordered_map \
  /usr/include/c++/13/bits/unordered_map.h \
  /usr/include/c++/13/bits/hashtable.h \
@@ -265,6 +264,9 @@ CMakeFiles/app.dir/app/src/yolov5s.cpp.o: \
  /usr/include/opencv4/opencv2/highgui.hpp \
  /usr/include/opencv4/opencv2/imgcodecs.hpp \
  /usr/include/opencv4/opencv2/videoio.hpp \
+ /usr/include/opencv4/opencv2/highgui.hpp \
+ /usr/include/opencv4/opencv2/imgproc.hpp \
+ /usr/include/opencv4/opencv2/imgproc/segmentation.hpp \
  /home/cat/linux_Ai/3rdparty/rga/RK3588/include/rga.h \
  /home/cat/linux_Ai/3rdparty/rga/RK3588/include/RgaUtils.h \
  /home/cat/linux_Ai/3rdparty/rga/RK3588/include/im2d.h \
@@ -284,4 +286,8 @@ CMakeFiles/app.dir/app/src/yolov5s.cpp.o: \
  /usr/include/aarch64-linux-gnu/c++/13/bits/messages_members.h \
  /usr/include/libintl.h /usr/include/c++/13/bits/locale_facets_nonio.tcc \
  /usr/include/c++/13/bits/locale_conv.h \
- /usr/include/c++/13/bits/quoted_string.h
+ /usr/include/c++/13/bits/quoted_string.h \
+ /home/cat/linux_Ai/app/inc/post_process.h /usr/include/c++/13/filesystem \
+ /usr/include/c++/13/bits/fs_fwd.h /usr/include/c++/13/bits/fs_path.h \
+ /usr/include/c++/13/codecvt /usr/include/c++/13/bits/fs_dir.h \
+ /usr/include/c++/13/bits/fs_ops.h /home/cat/linux_Ai/app/inc/yolov5s.h

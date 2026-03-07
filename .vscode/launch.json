@@ -19,17 +19,23 @@
                     "value": "" 
                 }
             ],
+            "miDebuggerArgs": "-n -ex \"set debuginfod enabled off\"",
             // 👆👆👆 这会让 GDB 找不到下载服务器，彻底死心 👆👆👆
 
             "setupCommands": [
                 {
-                    "description": "为 gdb 启用整齐打印",
-                    "text": "-enable-pretty-printing",
+                    "description": "【终极杀招】禁止自动加载任何外部动态库的符号，彻底掐断下载源头",
+                    "text": "set auto-solib-add off",
                     "ignoreFailures": true
                 },
                 {
-                    "description": "反汇编风格",
-                    "text": "-gdb-set disassembly-flavor intel",
+                    "description": "禁用 debuginfod",
+                    "text": "set debuginfod enabled off",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "为 gdb 启用整齐打印",
+                    "text": "-enable-pretty-printing",
                     "ignoreFailures": true
                 }
             ]

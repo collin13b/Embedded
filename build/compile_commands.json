@@ -1,0 +1,50 @@
+[
+{
+  "directory": "/home/cat/linux_Ai/build",
+  "command": "/usr/bin/aarch64-linux-gnu-g++ -I/home/cat/linux_Ai/app/inc -I/home/cat/linux_Ai/3rdparty/rga/RK3588/include -I/home/cat/linux_Ai/3rdparty/librknn_api/include -I/home/cat/ZLMediaKit/api/include/mk_api -isystem /usr/include/opencv4 -g -std=gnu++17 -o CMakeFiles/app.dir/app/src/main.cpp.o -c /home/cat/linux_Ai/app/src/main.cpp",
+  "file": "/home/cat/linux_Ai/app/src/main.cpp",
+  "output": "CMakeFiles/app.dir/app/src/main.cpp.o"
+},
+{
+  "directory": "/home/cat/linux_Ai/build",
+  "command": "/usr/bin/aarch64-linux-gnu-g++ -I/home/cat/linux_Ai/app/inc -I/home/cat/linux_Ai/3rdparty/rga/RK3588/include -I/home/cat/linux_Ai/3rdparty/librknn_api/include -I/home/cat/ZLMediaKit/api/include/mk_api -isystem /usr/include/opencv4 -g -std=gnu++17 -o CMakeFiles/app.dir/app/src/thread_pool.cpp.o -c /home/cat/linux_Ai/app/src/thread_pool.cpp",
+  "file": "/home/cat/linux_Ai/app/src/thread_pool.cpp",
+  "output": "CMakeFiles/app.dir/app/src/thread_pool.cpp.o"
+},
+{
+  "directory": "/home/cat/linux_Ai/build",
+  "command": "/usr/bin/aarch64-linux-gnu-g++ -I/home/cat/linux_Ai/app/inc -I/home/cat/linux_Ai/3rdparty/rga/RK3588/include -I/home/cat/linux_Ai/3rdparty/librknn_api/include -I/home/cat/ZLMediaKit/api/include/mk_api -isystem /usr/include/opencv4 -g -std=gnu++17 -o CMakeFiles/app.dir/app/src/yolov5s.cpp.o -c /home/cat/linux_Ai/app/src/yolov5s.cpp",
+  "file": "/home/cat/linux_Ai/app/src/yolov5s.cpp",
+  "output": "CMakeFiles/app.dir/app/src/yolov5s.cpp.o"
+},
+{
+  "directory": "/home/cat/linux_Ai/build",
+  "command": "/usr/bin/aarch64-linux-gnu-g++ -I/home/cat/linux_Ai/app/inc -I/home/cat/linux_Ai/3rdparty/rga/RK3588/include -I/home/cat/linux_Ai/3rdparty/librknn_api/include -I/home/cat/ZLMediaKit/api/include/mk_api -isystem /usr/include/opencv4 -g -std=gnu++17 -o CMakeFiles/app.dir/app/src/bind_thread.cpp.o -c /home/cat/linux_Ai/app/src/bind_thread.cpp",
+  "file": "/home/cat/linux_Ai/app/src/bind_thread.cpp",
+  "output": "CMakeFiles/app.dir/app/src/bind_thread.cpp.o"
+},
+{
+  "directory": "/home/cat/linux_Ai/build",
+  "command": "/usr/bin/aarch64-linux-gnu-g++ -I/home/cat/linux_Ai/app/inc -I/home/cat/linux_Ai/3rdparty/rga/RK3588/include -I/home/cat/linux_Ai/3rdparty/librknn_api/include -I/home/cat/ZLMediaKit/api/include/mk_api -isystem /usr/include/opencv4 -g -std=gnu++17 -o CMakeFiles/app.dir/app/src/post_process.cpp.o -c /home/cat/linux_Ai/app/src/post_process.cpp",
+  "file": "/home/cat/linux_Ai/app/src/post_process.cpp",
+  "output": "CMakeFiles/app.dir/app/src/post_process.cpp.o"
+},
+{
+  "directory": "/home/cat/linux_Ai/build",
+  "command": "/usr/bin/aarch64-linux-gnu-g++ -I/home/cat/linux_Ai/app/inc -I/home/cat/linux_Ai/3rdparty/rga/RK3588/include -I/home/cat/linux_Ai/3rdparty/librknn_api/include -I/home/cat/ZLMediaKit/api/include/mk_api -isystem /usr/include/opencv4 -g -std=gnu++17 -o CMakeFiles/app.dir/app/src/mpp.cpp.o -c /home/cat/linux_Ai/app/src/mpp.cpp",
+  "file": "/home/cat/linux_Ai/app/src/mpp.cpp",
+  "output": "CMakeFiles/app.dir/app/src/mpp.cpp.o"
+},
+{
+  "directory": "/home/cat/linux_Ai/build",
+  "command": "/usr/bin/aarch64-linux-gnu-g++ -I/home/cat/linux_Ai/app/inc -I/home/cat/linux_Ai/3rdparty/rga/RK3588/include -I/home/cat/linux_Ai/3rdparty/librknn_api/include -I/home/cat/ZLMediaKit/api/include/mk_api -isystem /usr/include/opencv4 -g -std=gnu++17 -o CMakeFiles/app.dir/app/src/rtmp.cpp.o -c /home/cat/linux_Ai/app/src/rtmp.cpp",
+  "file": "/home/cat/linux_Ai/app/src/rtmp.cpp",
+  "output": "CMakeFiles/app.dir/app/src/rtmp.cpp.o"
+},
+{
+  "directory": "/home/cat/linux_Ai/build",
+  "command": "/usr/bin/aarch64-linux-gnu-g++ -I/home/cat/linux_Ai/app/inc -I/home/cat/linux_Ai/3rdparty/rga/RK3588/include -I/home/cat/linux_Ai/3rdparty/librknn_api/include -I/home/cat/ZLMediaKit/api/include/mk_api -isystem /usr/include/opencv4 -g -std=gnu++17 -o CMakeFiles/app.dir/app/src/ZLMidea.cpp.o -c /home/cat/linux_Ai/app/src/ZLMidea.cpp",
+  "file": "/home/cat/linux_Ai/app/src/ZLMidea.cpp",
+  "output": "CMakeFiles/app.dir/app/src/ZLMidea.cpp.o"
+}
+]

@@ -19,11 +19,12 @@ public:
     bool enqueue(const T &t )
     {
         unique_lock<mutex> lock(q_mutex);//使用条件变量必须使用unique_lock
-        bool status =  q_cond.wait_for(lock, chrono::milliseconds(100) ,
-            [this]{return stop_flag.load() || q.size() < max_size; });//等待条件变量，直到队列不满
-        if(stop_flag.load() || !status ) return false;
+        if(stop_flag.load() ) return false;
+        while(q.size() >= 3)
+            q.pop();
         q.push(move(t));
-        q_cond.notify_all();//通知可能等待的线程
+        lock.unlock();
+        q_cond.notify_one();//通知可能等待的线程
         return true;
     }
 

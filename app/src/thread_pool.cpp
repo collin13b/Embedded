@@ -1,4 +1,5 @@
 #include "thread_pool.h"
+#include "post_process.h"
 ThreadPool::ThreadPool(const string &model_path, int num_threads) {
    if(!init(model_path,num_threads))
         run_flag = true;
@@ -76,8 +77,12 @@ future<ProcessData> ThreadPool::submit_task(int index,cv::Mat &img)
         try
         {
             auto &yolo = yolo_groups[index % yolo_groups.size()];
-            yolo->inference_img(const_cast<cv::Mat&>(img));
+
+            result_group results;
+            yolo->inference_img(const_cast<cv::Mat&>(img),results);
+            
             result.processed_frame = img;
+            result.results = results;
         }
         catch(const std::exception& e)
         {

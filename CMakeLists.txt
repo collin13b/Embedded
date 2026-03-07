@@ -9,6 +9,7 @@ set(CMAKE_BUILD_TYPE Debug)
 
 #查找库文件
 find_package(OpenCV REQUIRED)
+find_library(MPP_LIB rockchip_mpp)
 #输出opencv的信息
 message(STATUS "OPENCV LIB STATUS:")
 message(STATUS "OPENCV VERSION ${OpenCV_VERSION}")
@@ -19,12 +20,15 @@ set(RGA_LIB ${3RDPARTY}/rga/RK3588/lib/Linux/aarch64/librga.so)
 set(RKNN_INCLUDE ${3RDPARTY}/librknn_api/include)
 set(RKNN_LIB ${3RDPARTY}/librknn_api/aarch64/librknnrt.so)
 
+
+
 #包含头文件
 include_directories(
         ${OpenCV_INCLUDE_DIRS}
         ${PROJECT_SOURCE_DIR}/app/inc
         ${RGA_INCLUDE}
         ${RKNN_INCLUDE}
+        /home/cat/ZLMediaKit/api/include/mk_api
 )
 set(C_DIR ${CMAKE_SOURCE_DIR}/app/src)
 add_executable(app 
@@ -32,11 +36,17 @@ add_executable(app
         ${C_DIR}/thread_pool.cpp
         ${C_DIR}/yolov5s.cpp
         ${C_DIR}/bind_thread.cpp
+        ${C_DIR}/post_process.cpp
+        ${C_DIR}/mpp.cpp
+        ${C_DIR}/rtmp.cpp
+        ${C_DIR}/ZLMidea.cpp
         )
 # 将 OpenCV 的库与目标可执行文件 app 链接，确保在程序运行时能够调用 OpenCV 函数。
 target_link_libraries(app
          ${OpenCV_LIBS}
          ${RKNN_LIB}
          ${RGA_LIB}
+         ${MPP_LIB}
+         mk_api
 
 )

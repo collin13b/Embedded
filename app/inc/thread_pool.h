@@ -16,12 +16,13 @@
 #include <stop_token>
 #include <pthread.h>
 #include <sched.h>
+#include "post_process.h"
 using namespace std;
 
 struct ProcessData
 {
     cv::Mat processed_frame;
-
+    result_group results;
 };
 
 class ThreadPool {

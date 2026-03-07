@@ -129,6 +129,30 @@ app/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/build
 .PHONY : app/fast
 
+app/src/ZLMidea.o: app/src/ZLMidea.cpp.o
+.PHONY : app/src/ZLMidea.o
+
+# target to build an object file
+app/src/ZLMidea.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/app/src/ZLMidea.cpp.o
+.PHONY : app/src/ZLMidea.cpp.o
+
+app/src/ZLMidea.i: app/src/ZLMidea.cpp.i
+.PHONY : app/src/ZLMidea.i
+
+# target to preprocess a source file
+app/src/ZLMidea.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/app/src/ZLMidea.cpp.i
+.PHONY : app/src/ZLMidea.cpp.i
+
+app/src/ZLMidea.s: app/src/ZLMidea.cpp.s
+.PHONY : app/src/ZLMidea.s
+
+# target to generate assembly for a file
+app/src/ZLMidea.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/app/src/ZLMidea.cpp.s
+.PHONY : app/src/ZLMidea.cpp.s
+
 app/src/bind_thread.o: app/src/bind_thread.cpp.o
 .PHONY : app/src/bind_thread.o
 
@@ -176,6 +200,78 @@ app/src/main.s: app/src/main.cpp.s
 app/src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/app/src/main.cpp.s
 .PHONY : app/src/main.cpp.s
+
+app/src/mpp.o: app/src/mpp.cpp.o
+.PHONY : app/src/mpp.o
+
+# target to build an object file
+app/src/mpp.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/app/src/mpp.cpp.o
+.PHONY : app/src/mpp.cpp.o
+
+app/src/mpp.i: app/src/mpp.cpp.i
+.PHONY : app/src/mpp.i
+
+# target to preprocess a source file
+app/src/mpp.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/app/src/mpp.cpp.i
+.PHONY : app/src/mpp.cpp.i
+
+app/src/mpp.s: app/src/mpp.cpp.s
+.PHONY : app/src/mpp.s
+
+# target to generate assembly for a file
+app/src/mpp.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/app/src/mpp.cpp.s
+.PHONY : app/src/mpp.cpp.s
+
+app/src/post_process.o: app/src/post_process.cpp.o
+.PHONY : app/src/post_process.o
+
+# target to build an object file
+app/src/post_process.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/app/src/post_process.cpp.o
+.PHONY : app/src/post_process.cpp.o
+
+app/src/post_process.i: app/src/post_process.cpp.i
+.PHONY : app/src/post_process.i
+
+# target to preprocess a source file
+app/src/post_process.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/app/src/post_process.cpp.i
+.PHONY : app/src/post_process.cpp.i
+
+app/src/post_process.s: app/src/post_process.cpp.s
+.PHONY : app/src/post_process.s
+
+# target to generate assembly for a file
+app/src/post_process.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/app/src/post_process.cpp.s
+.PHONY : app/src/post_process.cpp.s
+
+app/src/rtmp.o: app/src/rtmp.cpp.o
+.PHONY : app/src/rtmp.o
+
+# target to build an object file
+app/src/rtmp.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/app/src/rtmp.cpp.o
+.PHONY : app/src/rtmp.cpp.o
+
+app/src/rtmp.i: app/src/rtmp.cpp.i
+.PHONY : app/src/rtmp.i
+
+# target to preprocess a source file
+app/src/rtmp.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/app/src/rtmp.cpp.i
+.PHONY : app/src/rtmp.cpp.i
+
+app/src/rtmp.s: app/src/rtmp.cpp.s
+.PHONY : app/src/rtmp.s
+
+# target to generate assembly for a file
+app/src/rtmp.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/app/src/rtmp.cpp.s
+.PHONY : app/src/rtmp.cpp.s
 
 app/src/thread_pool.o: app/src/thread_pool.cpp.o
 .PHONY : app/src/thread_pool.o
@@ -234,12 +330,24 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... app"
+	@echo "... app/src/ZLMidea.o"
+	@echo "... app/src/ZLMidea.i"
+	@echo "... app/src/ZLMidea.s"
 	@echo "... app/src/bind_thread.o"
 	@echo "... app/src/bind_thread.i"
 	@echo "... app/src/bind_thread.s"
 	@echo "... app/src/main.o"
 	@echo "... app/src/main.i"
 	@echo "... app/src/main.s"
+	@echo "... app/src/mpp.o"
+	@echo "... app/src/mpp.i"
+	@echo "... app/src/mpp.s"
+	@echo "... app/src/post_process.o"
+	@echo "... app/src/post_process.i"
+	@echo "... app/src/post_process.s"
+	@echo "... app/src/rtmp.o"
+	@echo "... app/src/rtmp.i"
+	@echo "... app/src/rtmp.s"
 	@echo "... app/src/thread_pool.o"
 	@echo "... app/src/thread_pool.i"
 	@echo "... app/src/thread_pool.s"

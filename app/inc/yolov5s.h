@@ -6,14 +6,21 @@
 #include <ranges>
 #include <fstream>
 #include <string>
-#include <opencv4/opencv2/core.hpp>
+
+#include <opencv2/core.hpp>
 #include <opencv4/opencv2/highgui.hpp>
+#include <opencv2/highgui.hpp>
+#include <opencv2/imgproc.hpp>
 #include "rga.h"
 #include "RgaUtils.h"
 #include "im2d.h"
 #include "rknn_api.h"
+#include <chrono>
+#include <iomanip>
+#include <sstream>
 using namespace std;
 using namespace cv;
+struct result_group;
 class yolov5s
 {
 public:
@@ -28,7 +35,8 @@ public:
     int img_width = 0;
     int img_channel = 0 ;
 
-    int inference_img(Mat &img);
+    int inference_img(Mat &img,result_group &results);
+    static int draw_result(Mat &img,result_group &results);
 private:
     rknn_context ctx;
     size_t model_size;
