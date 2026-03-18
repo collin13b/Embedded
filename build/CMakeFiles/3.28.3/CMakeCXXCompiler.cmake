@@ -22,11 +22,11 @@ set(CMAKE_CXX_SIMULATE_VERSION "")
 
 
 
-set(CMAKE_AR "/usr/bin/aarch64-linux-gnu-ar")
+set(CMAKE_AR "/usr/bin/ar")
 set(CMAKE_CXX_COMPILER_AR "/usr/bin/aarch64-linux-gnu-gcc-ar-13")
-set(CMAKE_RANLIB "/usr/bin/aarch64-linux-gnu-ranlib")
+set(CMAKE_RANLIB "/usr/bin/ranlib")
 set(CMAKE_CXX_COMPILER_RANLIB "/usr/bin/aarch64-linux-gnu-gcc-ranlib-13")
-set(CMAKE_LINKER "/usr/bin/aarch64-linux-gnu-ld")
+set(CMAKE_LINKER "/usr/bin/ld")
 set(CMAKE_MT "")
 set(CMAKE_TAPI "CMAKE_TAPI-NOTFOUND")
 set(CMAKE_COMPILER_IS_GNUCXX 1)

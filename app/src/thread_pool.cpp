@@ -1,7 +1,7 @@
 #include "thread_pool.h"
 #include "post_process.h"
-ThreadPool::ThreadPool(const string &model_path, int num_threads) {
-   if(!init(model_path,num_threads))
+ThreadPool::ThreadPool(const string &model_path, int num_threads,vector<int> &core_ids) {
+   if(!init(model_path,num_threads,core_ids))
         run_flag = true;
 }
 extern void bind_self_to_cores(const std::vector<int>& target_cores);
@@ -17,13 +17,14 @@ ThreadPool::~ThreadPool() {
     cout<<"ThreadPool destroyed\n";
 }
 
-bool ThreadPool::init(const string &model_path,int num_threads)
+bool ThreadPool::init(const string &model_path,int num_threads,vector<int>&core_ids)
 {
     if(num_threads <= 0)
         num_threads = 3;
     for(int i = 0; i < num_threads; ++i)
     {
-        auto yolo = std::make_unique<yolov5s>(model_path.c_str(), i % 3);
+        int core_id= core_ids[i];
+        auto yolo = std::make_unique<yolov5s>(model_path.c_str(), core_id );
         yolo_groups.emplace_back(move(yolo));
     }
     

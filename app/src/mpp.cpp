@@ -60,16 +60,8 @@ bool MPP::init(int width,int height,int fps)
     mpp_enc_cfg_set_s32(cfg, "rc:fps_out_denorm", 1);
 
     // GOP (Group of Pictures) 设置，通常为帧率的 2 倍 (2秒一个完整关键帧 I 帧)
-    mpp_enc_cfg_set_s32(cfg, "rc:gop", 60);
-    mpp_enc_cfg_set_s32(cfg,"codec:type",MPP_VIDEO_CodingAVC);
-    mpp_enc_cfg_set_s32(cfg, "h264:profile", 100); // High profile
-
-    mpp_enc_cfg_set_s32(cfg, "h264:level", 31);
-
-    mpp_enc_cfg_set_s32(cfg, "h264:cabac_en", 1);
-
-    mpp_enc_cfg_set_s32(cfg, "h264:cabac_idc", 0);
-
+    mpp_enc_cfg_set_s32(cfg, "rc:gop", fps * 2);
+    mpp_enc_cfg_set_s32(cfg, "h264:profile", 66);
 
     ret = mpi->control(ctx,MPP_ENC_SET_CFG,cfg);
     if(ret != MPP_OK)
@@ -77,6 +69,7 @@ bool MPP::init(int width,int height,int fps)
         cerr<<"[MPP set cfg] failed"<<endl;
         return false;
     }
+    mpp_buffer_group_get_internal(&buf_grp, MPP_BUFFER_TYPE_DRM);
     // std::cout << "🚀 MPP H.264 Encoder Init Success!" << std::endl;
     return true;
 }
@@ -86,7 +79,7 @@ bool MPP::encoder(const cv::Mat& nv12_img, int width, int height, bool is_eos,
     this->frame = nullptr;
     this->packet = nullptr;
     this->buffer = nullptr;
-
+    this->buf_grp = nullptr;
     if(nv12_img.empty() && is_eos)
     {
         mpp_frame_init(&frame);
@@ -96,7 +89,7 @@ bool MPP::encoder(const cv::Mat& nv12_img, int width, int height, bool is_eos,
     else{
         size_t size = width * height * 3 / 2;
 
-        mpp_buffer_get(NULL,&buffer,size);
+        mpp_buffer_get(buf_grp,&buffer,size);
         if(!buffer) return false;
 
         if(!nv12_img.empty())
@@ -127,7 +120,7 @@ bool MPP::encoder(const cv::Mat& nv12_img, int width, int height, bool is_eos,
     {
         MPP_RET ret;
         ret = mpi->encode_get_packet(ctx,&packet);
-        if(ret == MPP_OK)
+        if(ret == MPP_OK && packet != nullptr)
         {
             void *ptr = mpp_packet_get_pos(packet);
             size_t len = mpp_packet_get_length(packet);
@@ -147,7 +140,7 @@ bool MPP::encoder(const cv::Mat& nv12_img, int width, int height, bool is_eos,
         else{
             break;
         }
-    } while (0);
+    } while (1);
 
     mpp_frame_deinit(&frame);
     mpp_buffer_put(buffer);

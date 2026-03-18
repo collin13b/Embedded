@@ -27,9 +27,9 @@ struct ProcessData
 
 class ThreadPool {
 public:
-    ThreadPool(const string &model_path, int num_threads);
+    ThreadPool(const string &model_path, int num_threads,vector<int> &core_ids);
     ~ThreadPool();
-    bool init(const string &model_path,int num_threads);
+    bool init(const string &model_path,int num_threads,vector<int> &core_ids);
     void worker(int worker_id);
     future<ProcessData> submit_task(int index,cv::Mat &img);
 private:

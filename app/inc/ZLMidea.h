@@ -3,19 +3,21 @@
 #include "mk_media.h"
 #include <iostream>
 #include <chrono>
+#include <cstring>
+#include <string.h>
+using namespace std;
 class zl_media
 {
 public:
     zl_media(){};
     uint64_t start_time;
     mk_media media;
-    bool media_init(int width,int height,int fps);
-    bool push_frame(void *data,size_t size);
+    static bool global_init();
+    bool media_init(int width,int height,int fps,const string& stream_name);
+    bool push_frame(void *data,size_t size,uint32_t time);
     ~zl_media(){ 
         if(media) mk_media_release(media);
         mk_stop_all_server();
-        
-
     };
 
 };

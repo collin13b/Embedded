@@ -186,7 +186,7 @@ int yolov5s::inference_img(Mat &img,result_group &results)
             qnt_scales.emplace_back(output_tensors[i].scale);
         }
         post_process((int8_t *)outputs[0].buf,(int8_t *)outputs[1].buf,(int8_t *)outputs[2].buf,model_height,model_width,0.5,0.5,scale_w,scale_h,qnt_zps,qnt_scales,results);
-
+        rknn_outputs_release(ctx, io_num.n_output, outputs.data());
     }
         catch(const std::exception& e)
         {            cerr << "Error during preprocessing: " << e.what() << endl;
@@ -243,7 +243,7 @@ int yolov5s::draw_result(Mat &img,result_group &results)
                     text,
                     Point(xmin,label_min),
                     FONT_HERSHEY_SIMPLEX,font_scale,
-                    cv::Scalar(0,255,0),thinckness
+                    cv::Scalar(255,255,255),thinckness
         );
     }
     return 0;

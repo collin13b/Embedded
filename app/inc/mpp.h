@@ -22,7 +22,7 @@ public:
     MppFrame frame;
     MppPacket packet;
     MppBuffer buffer;
-
+    MppBufferGroup buf_grp;
     bool init(int width,int height,int fps);
     // bool encoder(const cv::Mat nv12_img,FILE *out_fp,int width, int height,bool is_eos);
     bool encoder(const cv::Mat& nv12_img, int width, int height, bool is_eos, 
